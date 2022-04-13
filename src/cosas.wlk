@@ -1,11 +1,11 @@
 object castillo {
 	var nivelDeDefensa= 150
 	
-	method altura()== 20 
+	method altura()= 20 
 	
 	method nivelDeDefensa()= nivelDeDefensa
 	
-	method reccibirAtaque(unValor){
+	method recibirAtaque(unValor){
 		nivelDeDefensa -= 0.max(nivelDeDefensa - unValor)
 	}
 	
@@ -14,8 +14,8 @@ object castillo {
 		nivelDeDefensa = nivelDeDefensa / 5
 		}
 		
-		method recibirTrabajo(){
-			nivelDeDefensa = 200.min(nivelDeDefensa + 20)
+	method recibirTrabajo(){
+		nivelDeDefensa = 200.min(nivelDeDefensa + 20)
 		}
 	}
 } 
@@ -28,7 +28,7 @@ object aurora{
 	
 	method estaViva()= estaViva
 	
-	method reccibirAtaque(unValor){
+	method recibirAtaque(unValor){
 		estaViva= unValor < 10
 	}
 	
@@ -47,9 +47,9 @@ object tipa{
 		return altura
 	}
 	
-	method reccibirAtaque(unValor){}
+	method recibirAtaque(unValor){}
 	
-	method valorQueOtorga()= altura * 2
+	method valorQueOtorga()== altura * 2
 	
 	method recibirTrabajo(){
 		altura ++
