@@ -17,7 +17,7 @@ object jabalina{
 	
 	method nivelDePotencia()= 30
 	
-	method estaCargada()= estaCargda
+	method estaCargada()= estaCargada
 	
 	method usar(){
 		estaCargada= false
