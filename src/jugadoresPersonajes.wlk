@@ -4,7 +4,7 @@ import armas.*
 object luisa {
 	var jugadorActivo
 	
-	method jugadorActivo()(unJugador){
+	method jugadorActivo(unJugador){
 		jugadorActivo= unJugador
 	}
 	
